@@ -7,15 +7,15 @@ window.INVITACION = {
   novia: "Mariela",
 
   // Fecha y hora de la boda (formato ISO con zona horaria de Paraguay, UTC-3)
-  fecha: "2026-12-19T17:00:00-03:00",
-  duracionHoras: 7, // duración del evento en el calendario
+  fecha: "2026-12-19T20:30:00-03:00",
+  duracionHoras: 6, // duración del evento en el calendario
 
   frase: "Hay encuentros que cambian una vida entera. El nuestro llegó sin aviso, y hoy queremos celebrarlo contigo.",
 
   lugar: {
-    nombre: "Estancia Los Olivos",
-    direccion: "Ruta PY02, km 28, Capiatí, Paraguay",
-    mapa: "https://maps.app.goo.gl/gHazhNH39Sq2r6Si6?g_st=aw"
+    nombre: "Parroquia Virgen del Rosario",
+    direccion: "Itacurubí de la Cordillera, Paraguay",
+    mapa: "https://www.google.com/maps/place/Parroquia+Virgen+del+Rosario/@-25.4602578,-56.8556974,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x945e9cc044ffffff:0x39bde646ffee34e6!8m2!3d-25.4602578!4d-56.8556974!16s%2Fg%2F11sscs4csf"
   },
 
   // Fotos de la portada a pantalla completa
@@ -26,8 +26,8 @@ window.INVITACION = {
 
   // Ceremonia y recepción (tarjetas con ícono)
   eventos: [
-    { icono: "iglesia", titulo: "Ceremonia", lugar: "Estancia Los Olivos", hora: "17:00", mapa: "https://maps.app.goo.gl/gHazhNH39Sq2r6Si6?g_st=aw" },
-    { icono: "copas", titulo: "Recepción & Brindis", lugar: "Estancia Los Olivos", hora: "19:00", mapa: "https://maps.app.goo.gl/gHazhNH39Sq2r6Si6?g_st=aw" }
+    { icono: "iglesia", titulo: "Ceremonia", lugar: "Parroquia Virgen del Rosario<br>Itacurubí de la Cordillera", hora: "20:30", mapa: "https://www.google.com/maps/place/Parroquia+Virgen+del+Rosario/@-25.4602578,-56.8556974,767m/data=!3m2!1e3!4b1!4m6!3m5!1s0x945e9cc044ffffff:0x39bde646ffee34e6!8m2!3d-25.4602578!4d-56.8556974!16s%2Fg%2F11sscs4csf" },
+    { icono: "copas", titulo: "Recepción & Brindis", lugar: "Salón de eventos", hora: "21:00", mapa: "https://maps.app.goo.gl/gHazhNH39Sq2r6Si6?g_st=aw" }
   ],
 
   // Foto que acompaña la frase "Y ahora, para siempre" (vacío = sin foto)
@@ -47,10 +47,8 @@ window.INVITACION = {
   musica: "assets/musica.mp3", // Canon en Re de Pachelbel (arreglo para arpa y cuerdas)
 
   programa: [
-    { hora: "17:00", titulo: "Ceremonia", detalle: "Bajo los olivos del jardín" },
-    { hora: "19:00", titulo: "Recepción y brindis", detalle: "Con nuestros seres queridos" },
-    { hora: "20:00", titulo: "Cena", detalle: "En el salón principal" },
-    { hora: "22:00", titulo: "Fiesta", detalle: "Hasta que el cuerpo aguante" }
+    { hora: "20:30", titulo: "Ceremonia", detalle: "Parroquia Virgen del Rosario" },
+    { hora: "21:00", titulo: "Recepción & Brindis", detalle: "En el salón, para celebrar juntos" }
   ],
 
   vestimenta: {
