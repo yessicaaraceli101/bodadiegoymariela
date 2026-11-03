@@ -242,12 +242,6 @@
   $("#programa").innerHTML = C.programa.map(e =>
     `<li class="revela"><time>${e.hora}</time><div><h3>${e.titulo}</h3><p>${e.detalle}</p></div></li>`).join("");
 
-  // Vestimenta
-  $("#ellos").textContent = C.vestimenta.ellos;
-  $("#ellas").textContent = C.vestimenta.ellas;
-  $("#tonos").innerHTML = C.vestimenta.tonos.map(t => `<li><i style="background:${t.color}"></i>${t.nombre}</li>`).join("");
-  $("#notaVestimenta").innerHTML = `${C.vestimenta.nota}<em>${C.vestimenta.notaFinal}</em>`;
-
   // Regalo
   $("#textoRegalo").textContent = C.regalo.texto;
   const iconoCopiar = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>`;
