@@ -306,6 +306,7 @@
   })();
 
   $("#hashtag").textContent = C.hashtag;
+  $("#waFlotante").href = `https://wa.me/${C.confirmacion.whatsapp}?text=${encodeURIComponent(`¡Hola ${C.novio} y ${C.novia}! 💛`)}`;
   if (C.fotoCierre) {
     const fig = $("#fotoCierre"), img = new Image();
     img.alt = `${C.novio} y ${C.novia}`; img.loading = "lazy"; img.src = C.fotoCierre;

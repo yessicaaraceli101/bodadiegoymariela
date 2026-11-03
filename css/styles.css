@@ -618,3 +618,22 @@ main { overflow-x: hidden; }
   .portada__nombres .portada__y { margin: -.2em 0; }
   .portada .desliza { position: absolute; left: 78%; bottom: 0; transform: translateX(-50%); }
 }
+
+/* ---------- WhatsApp flotante ---------- */
+.wa-flotante {
+  position: fixed; z-index: 45;
+  left: 16px; bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .55rem 1.1rem .55rem .65rem; border-radius: 999px;
+  background: var(--oliva-claro); color: #fff; text-decoration: none;
+  font-family: var(--f-texto); font-size: 1.05rem; font-weight: 600;
+  box-shadow: 0 8px 20px -6px rgba(90,100,40,.55);
+  opacity: 0; transform: translateY(20px); pointer-events: none;
+  transition: opacity .6s ease 2s, transform .6s ease 2s, background .25s;
+}
+.listo .wa-flotante { opacity: 1; transform: none; pointer-events: auto; }
+.wa-flotante:hover { background: var(--oliva); }
+.wa-flotante svg { width: 26px; height: 26px; fill: #fff; flex: none; }
+@media (max-width: 480px) {
+  .wa-flotante { left: 12px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); font-size: 1rem; padding: .5rem 1rem .5rem .6rem; }
+}
