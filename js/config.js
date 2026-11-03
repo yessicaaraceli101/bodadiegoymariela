@@ -20,8 +20,8 @@ window.INVITACION = {
 
   // Fotos de la portada a pantalla completa
   portada: {
-    movil: "assets/portada-movil.jpg",          // vertical, para celular
-    escritorio: "assets/portada-escritorio.jpg" // horizontal, para computadora
+    movil: "assets/portada-bn.jpg",              // vertical, para celular
+    escritorio: "assets/portada-bn.jpg"         // en computadora se muestra al costado del texto
   },
 
   // Ceremonia y recepción (tarjetas con ícono)

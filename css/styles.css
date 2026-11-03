@@ -602,21 +602,19 @@ main { overflow-x: hidden; }
 @media (min-width: 760px) { .portada__foto img { object-position: center 35%; } }
 @media (prefers-reduced-motion: reduce) { .portada__texto > * { opacity: 1; transform: none; } .portada__foto img { transform: none; } }
 
-/* Portada en computadora: texto a la derecha, sobre el paisaje */
+/* Portada en computadora: foto a la izquierda, texto a la derecha sobre verde oliva */
 @media (min-width: 760px) and (min-aspect-ratio: 5/4) {
-  .portada { justify-content: center; align-items: flex-end; }
+  .portada { justify-content: center; align-items: flex-end; background: #3a4220; }
+  .portada__foto { right: auto; width: 56%; }
+  .portada__foto img { width: 100%; }
+  .portada__foto img { object-position: 50% 25%; }
   .portada__velo {
-    background:
-      linear-gradient(90deg, rgba(44,51,24,0) 30%, rgba(44,51,24,.55) 62%, rgba(40,47,22,.85) 100%),
-      linear-gradient(180deg, rgba(58,66,32,.2) 0%, rgba(58,66,32,0) 30%, rgba(58,66,32,0) 70%, rgba(44,51,24,.5) 100%);
+    background: linear-gradient(90deg, rgba(58,66,32,0) 0%, rgba(58,66,32,0) 40%, rgba(58,66,32,.85) 54%, #3a4220 58%),
+                radial-gradient(ellipse at 80% 40%, rgba(127,140,69,.35), transparent 60%);
   }
-  .portada__texto { width: 44%; margin-right: 3%; padding-bottom: 0; }
+  .portada__texto { width: 44%; margin-right: 0; padding: 0 2rem; }
   .portada__nombres { font-size: clamp(3.6rem, 6.4vw, 6rem); }
   .portada__nombres span { display: block; }
   .portada__nombres .portada__y { margin: -.2em 0; }
-  .portada .desliza { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); }
-  .portada__foto img { object-position: 30% 30%; }
+  .portada .desliza { position: absolute; left: 78%; bottom: 0; transform: translateX(-50%); }
 }
-
-.foto-cierre[hidden] + .guion { margin-top: 0; }
-.cierre { padding-top: 2rem; }
